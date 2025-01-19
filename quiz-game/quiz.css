@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+
+  background:#001e4d ;
+
+}
+
+.app{
+
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto  0;
+  border-radius: 10px;
+  padding: 30px;
+
+}
+
+.app h1{
+
+  font-size: 40px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px; 
+}
+
+.quiz{
+
+padding: 20px 0;
+
+}
+
+.quiz h2{
+
+  font-size: 22px;
+  color: #001e4d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.btn{
+
+  background: white;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:  all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+
+  background: #222;
+  color: #fff;
+
+}
+
+.btn:disabled{
+
+  cursor: no-drop; /*this changes th cursor to canceel icon */
+}
+
+#next-btn{
+
+  background: #001e4d;
+  color: white;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: hidden;
+  
+}
+
+#next-btn:hover{
+
+  filter:opacity(0.6)
+}
+
+.correct{
+
+  background: #9aeabc;
+  
+}
+
+.incorrect{
+
+  background: #ff9393;
+  
+}
