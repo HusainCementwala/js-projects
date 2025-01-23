@@ -5,6 +5,7 @@
 
   font-family: sans-serif;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container{
@@ -14,7 +15,7 @@
   background: url(images/background.png);
   background-position: center;
   background-size: cover;
-  padding: 0 7%;
+  padding: 0 5%;
   color: white;
 }
 
@@ -69,7 +70,7 @@ nav .btn{
 
 .content{
 
-  margin-top: 12%;
+  margin-top: 7%;
 
 }
 
@@ -97,11 +98,12 @@ nav .btn{
 
   display: inline-block;
   margin-top: 30px;
+  font-size: 20px;
   background: #ff960b;
   color: white;
 
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 25px;
   border-radius: 30px;
 }
 
@@ -120,12 +122,20 @@ display: flex;
 align-items: center;
 font-size: 14px;
 margin: 0 15px;
-color: #ff960b;
+color: rgb(255, 150, 11);
 border: 2px solid white;
-padding: 20px 30px;
+padding: 15px 25px;
 border-radius: 8px;
+cursor: pointer;
 
 }
+
+.coin:hover {
+  transform: scale(1.2); /* Slightly expand the div */
+  box-shadow: 0 4px 12px rgba(255, 145, 0, 0.5);
+  transition: transform 0.05s linear;
+}
+
 
 .coin img{
 
@@ -139,5 +149,52 @@ border-radius: 8px;
   color: white;
   font-size: 30px;
   margin-bottom: 5px;
+  transition: color 0.3s ease;
 }
+
+.coin h3:hover {
+  color: #ff9900; /* Highlight the price on hover */
+}
+
+.rocket-container{
+
+ 
+ 
+  z-index: 2;
+
+}
+.rocket {
+  z-index: 2;
+  width: 200px;
+  filter: invert(1);
+  position: absolute;
+  right: 5px;
+  bottom: -50px;
+  animation: rocket 3s linear infinite;
+}
+
+@keyframes rocket {
+
+  0%{
+
+    bottom: -50px;
+    opacity: 0;
+  }
+
+  50%{
+
+    bottom: 10%;
+    opacity: 1;
+  }
+
+  100%{
+
+    bottom: 105%;
+    opacity: 1;
+  }
+  
+}
+
+
+
 
